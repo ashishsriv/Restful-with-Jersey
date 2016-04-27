@@ -5,6 +5,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import com.restful.domain.Person;
 import com.restful.services.PersonService;
 
 @Path ("/v1/status")
@@ -21,6 +22,12 @@ public class V1_Status {
 	{
 		System.out.println(statusDao);
 		System.out.println(personService.findPerson(1));
+		Person p = new Person ();
+//		p.setId(2);
+		p.setName("Advik Srivastava");
+		p.setEmail("ashish.sriv@gmail.com");
+		personService.addPerson(p);
+		System.out.println(personService.findPerson(3));
 		return "<p>Java Web Services</p> ";
 	}
 	

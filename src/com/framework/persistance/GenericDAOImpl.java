@@ -27,6 +27,7 @@ public class GenericDAOImpl<T> /*extends SharedEntityManagerBean */implements Ge
     public T save(T emp) {
         // TODO Auto-generated method stub
         entityManager.persist(emp);
+//        entityManager.merge(emp);
         entityManager.flush();
         return emp;
     }

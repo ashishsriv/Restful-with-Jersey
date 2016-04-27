@@ -7,15 +7,13 @@ import com.framework.persistance.GenericDAOImpl;
 import com.restful.domain.Person;
  
 @Repository
-@Transactional
+//@Transactional
 public class PersonDAOImpl extends GenericDAOImpl<Person>  implements PersonDAO 
 {
      
     public void addPerson(Person person) 
     {
-        //Use null checks and handle them
-//        manager.persist(person);
-    
+    	save(person);
     }
 
 

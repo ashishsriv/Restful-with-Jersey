@@ -1,0 +1,9 @@
+com\framework\persistance\GenericDAO.class
+com\restful\dao\PersonDAO.class
+com\restful\services\PersonServiceImpl.class
+com\restful\status\StatusDao.class
+com\restful\dao\PersonDAOImpl.class
+com\restful\services\PersonService.class
+com\restful\domain\Person.class
+com\framework\persistance\GenericDAOImpl.class
+com\restful\status\V1_Status.class
